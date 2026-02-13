@@ -199,3 +199,6 @@ cython_debug/
 
 # opencode
 .opencode/plans
+
+# macOS
+.DS_Store
