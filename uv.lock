@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.12"
 
 [[package]]
@@ -1015,6 +1015,7 @@ version = "3.0.2"
 source = { editable = "." }
 dependencies = [
     { name = "fastmcp" },
+    { name = "httpx" },
     { name = "inquirer" },
     { name = "linkedin-scraper-patchright" },
     { name = "patchright" },
@@ -1037,6 +1038,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "fastmcp", specifier = ">=2.14.0" },
+    { name = "httpx", specifier = ">=0.27.0" },
     { name = "inquirer", specifier = ">=3.4.0" },
     { name = "linkedin-scraper-patchright", specifier = ">=3.1.1" },
     { name = "patchright", specifier = ">=1.40.0" },

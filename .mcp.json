@@ -6,6 +6,14 @@
       "env": {
         "LINKEDIN_MCP_HEADLESS": "true"
       }
+    },
+    "ghl": {
+      "command": "uv",
+      "args": ["run", "-m", "ghl_mcp_server"],
+      "env": {
+        "GHL_API_TOKEN": "${GHL_API_TOKEN}",
+        "GHL_LOCATION_ID": "${GHL_LOCATION_ID}"
+      }
     }
   }
 }

@@ -33,6 +33,7 @@ classifiers = [
 ]
 dependencies = [
     "fastmcp>=2.14.0",
+    "httpx>=0.27.0",
     "inquirer>=3.4.0",
     "linkedin-scraper-patchright>=3.1.1",
     "patchright>=1.40.0",
@@ -50,13 +51,14 @@ Changelog = "https://github.com/stickerdaniel/linkedin-mcp-server/releases"
 [project.scripts]
 linkedin-mcp-server = "linkedin_mcp_server.cli_main:main"
 linkedin-scraper-mcp = "linkedin_mcp_server.cli_main:main"
+ghl-mcp-server = "ghl_mcp_server.cli_main:main"
 
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["linkedin_mcp_server*"]
+include = ["linkedin_mcp_server*", "ghl_mcp_server*"]
 exclude = ["assets*", "docs*", "tests*"]
 
 [tool.setuptools.package-data]
